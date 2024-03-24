@@ -140,7 +140,7 @@
 		 &none      &kp Q     &kp W      &kp F      &kp P      &kp B                                                        &kp J      &kp L      &kp U      &kp Y      &none      &none
 	       	 &none      &kp A     &kp R      &kp S      &kp T      &kp G                                                        &kp M      &kp N      &kp E      &kp I      &kp O      &none  
                  &none      &kp Z     &kp X      &kp C      &kp D      &kp V      &none      &none             &none      &none     &kp K      &kp H      &kp COMMA  &kp PERIOD &mo FUN_L  &none
-	 	                                 &none      &none      &mo SYM_L  &kp SPACE  &none             &none      &kp RET   &mp NUM_   &none      &none
+	 	                                 &none      &none      &mo SYM_L  &kp SPACE  &none             &none      &kp RET   &mo NUM_L  &none      &none
             >;
         };
 
@@ -156,7 +156,7 @@
 		 &none     &none     &kp BSLH   &kp PRCNT  &kp DLLR    &none                                                         &none      &kp CARET   &kp LBRC   &kp RBRC   &none       &none
                  &none     &kp STAR  &kp LPAR   &kp RPAR   &kp SEMI    &none                                                         &none      &kp DQT     &kp LBKT   &kp RBKT   &kp COLON   &none
 	         &none     &mo FUN_L &kp GRAVE  &kp AT     &kp AMPS    &none                                                         &none      &kp HASH    &kp LT     &kp GT     &kp DEL     &none  
-                                                &none      &none      &trans      &kp SPACE  &none              &none      &kp RET  &kp ESC    &none      &none
+                                                &none      &none       &trans     &kp SPACE  &none              &none      &kp RET  &kp ESC    &none      &none
 	    >;
         };
 
