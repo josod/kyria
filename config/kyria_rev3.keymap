@@ -13,8 +13,8 @@
 #define CMK_L 0
 #define SYM_L 1
 #define NUM_L 2
-#define NAV_L 4
-#define FUN_L 5
+#define NAV_L 3
+#define FUN_L 4
 
 
 /* Uncomment this block if using RGB
@@ -131,7 +131,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-	// colemak dh 
+
+	// CMK_L (colemak dh)
 	default_layer {
 
             // ------------------------------------------------------       --------------------------------------------------------
@@ -150,20 +151,20 @@
             >;
         };
 
-
-	symbol_layer { 
+	// SYM_L
+	symbol_layer {	 
 
             // ------------------------------------------------------       --------------------------------------------------------
-            // |         |    \    |    %     |    $     |          |       |          |     ^    |     {    |     }    |          |
-	    // |    *    |    (    |    )     |    ;     |          |       |          |     "    |     [    |     ]    |     :    |
+            // |         |    \    |    %     |    $     |          |       |          |     ^    |     [    |     ]    |          |
+	    // |    *    |    (    |    )     |    ;     |          |       |          |     "    |     {    |     }    |     :    |
 	    // |  -FUN-  |    `    |    @     |    &     |          |       |          |     #    |     <    |     >    |    DEL   |
 	    // -------------------------------|  _SYM_   |   SPACE  |       |  RETURN  |    ESC   |---------------------------------
 	    //                                -----------------------       -----------------------
             //
 	    //                                                                                         <>
 	    bindings = <
-                 &none     &none     &kp BSLH   &kp PRCNT  &kp DLLR   &none                                                        &none      &kp CARET   &kp LBRC   &kp RBRC   &none       &none
- 	       	 &none     &kp STAR  &kp LPAR   &kp RPAR   &kp DLLR   &none                                                        &none      &kp DQT     &kp LBKT   &kp RBKT   &kp COLON   &none  
+                 &none     &none     &kp BSLH   &kp PRCNT  &kp DLLR   &none                                                        &none      &kp CARET   &kp LBKT   &kp RBKT   &none       &none
+ 	       	 &none     &kp STAR  &kp LPAR   &kp RPAR   &kp DLLR   &none                                                        &none      &kp DQT     &kp LBRC   &kp RBRC   &kp COLON   &none  
 		 &none     &mo FUN_L &kp GRAVE  &kp AT     &kp AMPS   &none      &none      &none	      &none	 &none	   &none      &kp HASH    &kp LT     &kp GT     &kp DEL     &none  
 	 	                                &none      &none      &trans     &kp SPACE  &none             &none      &kp RET   &kp ESC    &none       &none
                  
@@ -175,6 +176,8 @@
 	    >;
         };
 
+
+	// NUM_L
 	num_layer {
 
             // ------------------------------------------------------       --------------------------------------------------------
@@ -194,6 +197,7 @@
         };
 
 
+	// NAV_L
 	nav_layer {
 
             // ------------------------------------------------------       --------------------------------------------------------
@@ -212,6 +216,8 @@
             >;
         };
 
+
+	// FUN_L
 	fun_layer {
 
             // ------------------------------------------------------       --------------------------------------------------------
