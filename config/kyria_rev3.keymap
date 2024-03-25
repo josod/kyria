@@ -33,13 +33,14 @@
 
 
 /*
-	     34 Keys
-╭──────────────╮ ╭──────────────╮
-│ 0  1  2  3  4│ │ 5  6  7  8  9│
-│10 11 12 13 14│ │15 16 17 18 19│
-│20 21 22 23 24│ │25 26 27 28 29│
-╰────────╮30 31│ │32 33╭────────╯
-         ╰─────╯ ╰─────╯
+	     34 Keys (kyria 50 keys)
+    ╭──────────────╮           ╭──────────────╮
+  0 │ 1  2  3  4  5│           │ 6  7  8 9  10│ 11
+ 12 │13 14 15 16 17│           │18 19 20 21 22│ 23
+ 24 │25 26 27 28 29│30 31 32 33│34 35 36 37 38│ 39
+    ╰──────────╮   ╰─╮       ╭─╯   ╭──────────╯
+          40 41│43 44│ 45 46 │47 48│49 50
+	       ╰─────╯       ╰─────╯
 */
 
 / {
@@ -77,7 +78,7 @@
             layers = <0 1 2 3 4 5>;
             timeout-ms = <50>;
             // Z + X
-            key-positions = <26 27>;
+            key-positions = <25 26>;
             bindings = <&sk LCTL>;
         };
 /*        combo_unlock {
@@ -91,28 +92,28 @@
             layers = <0 1 2 3 4 5>;
             timeout-ms = <50>;
             // , + . = shift
-            key-positions = <32 33>;
+            key-positions = <36 37>;
             bindings = <&kp TAB>;
         };
         combo_opt {
             layers = <0 1 2 3 4 5>;
             timeout-ms = <50>;
             // SYM + SPC = CMD
-            key-positions = <37 38>;
+            key-positions = <43 44>;
             bindings = <&sk LCMD>;
         };
         combo_cmd {
             layers = <0 1 2 3 4 5>;
             timeout-ms = <50>;
             // NUM + ENT = OPT
-            key-positions = <39 40>;
+            key-positions = <47 48>;
             bindings = <&sk LALT>;
         };
         combo_bspc {
             layers = <0 1 2 3 4 5>;
             timeout-ms = <80>;
             // SPC + ENT = BSPC
-            key-positions = <38 39>;
+            key-positions = <44 47>;
             bindings = <&kp BSPC>;
         };
         combo_wp_q {
@@ -231,7 +232,7 @@
 	    bindings = <
 		 &none     &none     &kp F6     &kp F5     &kp F6      &kp F10                                                       &bt BT_SEL 0  &bt BT_SEL 1  &none          &out OUT_BLE  &bt BT_CLR  &none
                  &none     &none     &kp F1     &kp F2     &kp F3      &kp F11                                                       &kp K_MUTE    &kp C_VOL_UP  &kp C_VOL_DN   &out OUT_USB  &none       &none
-	         &none     &none     &kp F7     &kp F8     &kp F9      &kp F12     &none       &none             &none      &none    &none         &kp C_BRI_DN  &kp C_BRI_DN   &none         &trans      &none  
+	         &none     &none     &kp F7     &kp F8     &kp F9      &kp F12     &none       &none             &none      &none    &none         &kp C_BRI_UP  &kp C_BRI_DN   &none         &trans      &none  
                                                 &none      &none       &none       &trans      &none             &none      &trans   &none         &none         &none
 	    >;
         };
